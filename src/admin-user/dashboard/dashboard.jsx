@@ -1,9 +1,9 @@
 import './Dashboard.css'
 
-const Dashboard = () => {
+const dashboard = () => {
   return (
-    <div className="dashboard-container">dashboard</div>
+    <div className="dashboard-container">dashboard nowww</div>
   )
 }
 
-export default Dashboard
+export default dashboard
