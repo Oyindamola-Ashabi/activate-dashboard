@@ -1,0 +1,20 @@
+.container{
+    width: 16%;
+    min-height: 100vh;
+    background-color: brown;
+
+    
+
+}
+
+
+.side-bar{
+    margin-top: 0;
+    width: 100%;
+}
+
+/* .inner-element .side-bar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
