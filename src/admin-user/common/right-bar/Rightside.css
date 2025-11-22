@@ -1,5 +1,6 @@
 .right-side-container{
-    width: 18%;
+    width: 20%;
     min-height: 100vh;
-    background-color: green;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(66, 64, 64, 0.6);
 }

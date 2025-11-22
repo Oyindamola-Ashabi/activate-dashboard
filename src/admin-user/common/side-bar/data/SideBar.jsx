@@ -5,6 +5,7 @@ import Data from "./Data"
 import './SideBar.css'
 import { Link } from "react-router-dom"
 import MenuIcon from '@mui/icons-material/Menu';
+import Logo from '../../../../assets/logo.png'
 
 
 const SideBar = () => {
@@ -13,9 +14,9 @@ const SideBar = () => {
     // const [expanded, setExpanded] = useState(true)
     return (
         <div className="container">
-
-            <div className="bar" style={{display: "none"}}>
-                <MenuIcon/>
+            <img src={Logo} alt="" className="logo" />
+            <div className="bar" style={{ display: "none" }}>
+                <MenuIcon />
             </div>
             {Data.map((item) => {
                 return (

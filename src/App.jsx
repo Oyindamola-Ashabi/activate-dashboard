@@ -1,6 +1,6 @@
 
-import { Dashboard } from '@mui/icons-material'
-import SideBar from './admin-user/common/side-bar/data/SideBar'
+import Dashboard from './admin-user/dashboard/dashboard'
+// import SideBar from './admin-user/common/side-bar/data/SideBar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './admin-user/layout/Layout'
 
@@ -11,7 +11,7 @@ const App = () => {
       <BrowserRouter>
       {/* <SideBar/> */}
       <Routes>
-        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
                 <Route path="/" element={<Layout/>}/>
 
       </Routes>
