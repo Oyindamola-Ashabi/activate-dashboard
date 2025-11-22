@@ -2,7 +2,9 @@
 import SideBar from "../common/side-bar/data/SideBar"
 import './Layout.css'
 import Rightside from "../common/right-bar/Rightside"
-import Dashboard from "../dashboard/dashboard"
+import Dashboard from "../dashboard/Dashboard"
+
+
 
 
 const Layout = () => {
@@ -10,6 +12,7 @@ const Layout = () => {
     <div className="layout-container">
         <SideBar/>
         <Dashboard/>
+       
         <Rightside/>
 
     </div>
