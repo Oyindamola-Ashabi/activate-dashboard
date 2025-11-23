@@ -3,7 +3,8 @@
 // import SideBar from './admin-user/common/side-bar/data/SideBar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './admin-user/layout/Layout'
-import DashboardNew from './admin-user/dashboard/DashboardNew'
+import Dashboard from "./admin-user/dashboard/Dashboard";
+
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <BrowserRouter>
       {/* <SideBar/> */}
       <Routes>
-        <Route path='/dashboard' element={<DashboardNew/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path="/" element={<Layout/>}/>
 
       </Routes>
