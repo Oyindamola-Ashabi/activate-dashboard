@@ -9,12 +9,14 @@ import Dashboard from "../dashboard/Dashboard"
 
 
 
+
 const Layout = () => {
   return (
     <div className="layout-container">
-        <SideBar/>
-       <Dashboard/>
-        <Rightside/>
+      
+      <SideBar />
+      <Dashboard />
+      <Rightside />
 
     </div>
   )

@@ -1,0 +1,74 @@
+.navcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  /* padding-top: 15px; */
+  
+  background-color: white;
+}
+
+/* .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+
+.greeting {
+  font-size: 16px;
+  color: #000;
+}
+
+.username {
+  color: #3793ff;
+  font-weight: 500;
+}
+
+.bell {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+/* .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+} */
+
+.search-box {
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 10px 12px;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+   font-size: 10px;
+  /* color: #3793ff; */
+}
+
+.search-btn {
+  /* background: linear-gradient(to right, #368bff, #43c6ff); */
+  border: none;
+  padding: 10px 45px;
+  color: white;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  font-size: 15px;
+background: linear-gradient(90.91deg, #2972B5 0.28%, #90E0FC 111.21%), #C4C4C4;
+border-radius: 6px;
+
+
+}
