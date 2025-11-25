@@ -54,14 +54,14 @@ const CardOne = () => {
                     }}
                 >
                     <CardContent>
-                        <div style={{ color: "#4A86F7" }}>
+                        <div style={{ color: "#679FD2" }}>
                             <img src={item.icon} alt="icon-image" />
                         </div>
                         <Typography
                             sx={{
                                 marginTop: 1,
                                 fontWeight: 600,
-                                color: "#4A86F7"
+                                color: "#679FD2"
                             }}
                         >
                             {item.title}
