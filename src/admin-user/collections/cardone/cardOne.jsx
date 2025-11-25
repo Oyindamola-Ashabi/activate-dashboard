@@ -1,8 +1,8 @@
 import { Card, CardContent, Typography, Box } from "@mui/material";
 import cardIcon from '../../../assets/tag.png'
-import ordersicon from '../../../assets/Orders.png'
+import ordersicon from '../../../assets/orders.png'
 import styleIcon from '../../../assets/connect-stylist.png'
-import { blue } from "@mui/material/colors";
+// import { blue } from "@mui/material/colors";
 
 const items = [
     {
