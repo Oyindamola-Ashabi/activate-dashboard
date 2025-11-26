@@ -14,7 +14,7 @@ const Data = [
     id: 1,
     icon: dashboardIcon,
     heading: "Dashboard",
-    path: '/dashboard'
+    path: '/'
     },
 
     {
