@@ -21,7 +21,7 @@ const Data = [
         id: 2,
         icon: distributionicon,
         heading: "Distribution",
-        path: '/distribution',
+        path: '/dist',
 
     },
 

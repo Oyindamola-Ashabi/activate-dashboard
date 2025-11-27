@@ -2,7 +2,7 @@ import'./Distribution.css'
 
 const Distribution = () => {
   return (
-    <div>Distribution</div>
+    <div className='distribution-container'>Distribution</div>
   )
 }
 
