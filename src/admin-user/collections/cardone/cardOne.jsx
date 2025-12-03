@@ -27,8 +27,9 @@ const CardOne = () => {
         <Box
             sx={{
                 display: "flex",
-                gap: 3,
-                justifyContent: "center",
+                // gap: 7,
+                justifyContent: "space-between",
+                alignItems: "center",
                 marginTop: 1,
             }}
         >
