@@ -144,15 +144,19 @@ border-radius: 4px;
     width: 252px;
     height: 80px;
     border-radius: 4px;
+    position: absolute;
+    top: 335px;
+    right: 65px;
     /* background-color: #1d74f5; */
-    padding-bottom: 10px;
-    padding-left: 30px;
+    /* padding-bottom: 10px;
+    padding-left: 30px; */
 }
 
 .grouped-images .img-two{
     width: 260px;
     height: 80px;
     border-radius: 4px;
+    
     /* background-color: #1d74f5; */
     /* margin-bottom: 5px; */
     /* padding-left: 30px; */
