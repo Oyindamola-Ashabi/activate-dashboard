@@ -27,7 +27,7 @@ const CardOne = () => {
         <Box
             sx={{
                 display: "flex",
-                gap: 4,
+                gap: 5,
                 justifyContent: "center",
                 marginTop: 1,
             }}
@@ -36,7 +36,7 @@ const CardOne = () => {
                 <Card
                     key={item.id}
                     sx={{
-                        width: 250,
+                        width: 240,
                         height: 110,
                         // backgroundColor:"blue",
                         textAlign: "center",

@@ -1,0 +1,15 @@
+.correct-layout-container{
+    
+   width: 100%;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.middle-content {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+}

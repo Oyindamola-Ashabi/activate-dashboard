@@ -11,7 +11,7 @@
 
 .logo{
     padding-left: 40px;
-    /* margin-top: 50px; */
+    margin-top: 30px;
     margin-bottom: 50px;
 }
 
@@ -31,4 +31,25 @@
 .new{
     display: flex;
     gap: 10px;
+}
+
+.active-link {
+    color: #679FD2 !important;  /* ACTIVE COLOR */
+    font-weight: 500;
+}
+
+.active-link img {
+    filter: brightness(0) saturate(100%) invert(36%) sepia(54%) saturate(618%)
+    hue-rotate(179deg) brightness(93%) contrast(88%);
+}
+
+.iconn-img{
+    width: 24px;
+    height: 24px;
+
+}
+
+.text{
+    font-size: 14px;
+    font-weight: 400;
 }

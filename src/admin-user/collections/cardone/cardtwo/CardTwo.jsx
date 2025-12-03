@@ -1,6 +1,8 @@
 import './CardTwo.css'
 import bigClothOne from '../../../../assets/top-cloth-one.png'
 import smallImgage from '../../../../assets/group-pics.png'
+import { useNavigate } from "react-router-dom";
+
 
 
 const products = [
@@ -13,7 +15,11 @@ const products = [
 ];
 
 
+
+
+
 const CardTwo = () => {
+    const navigate = useNavigate();
     return (
         <div className="cards-wrapper">
             <p className="cards-title">Latest Trends in Stock</p>
@@ -33,7 +39,12 @@ const CardTwo = () => {
                             <img src={p.img2} alt="name" className="card-img2" />
                             <p className="stock">{p.stock} units in stock</p>
                         </div>
-                        <button className="cart-btn">Add to cart</button>
+                        <button
+                            className="cart-btn"
+                            onClick={() => navigate(`/product/${p.id}`)}
+                        >
+                            Add to cart
+                        </button>
 
                     </div>
                 ))}
