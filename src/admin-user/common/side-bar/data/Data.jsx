@@ -5,6 +5,7 @@ import collectionIcon from '../../../../assets/Map.png'
 import walletIcon from '../../../../assets/Wallet.png'
 import editProfileIcon from '../../../../assets/profile.png'
 import contactSupportIcon from '../../../../assets/contact.png'
+import Logout from '../../../../assets/Logout.png'
 
 
 
@@ -64,6 +65,15 @@ const Data = [
         path: '/contact-support',
 
     },
+
+//     {
+//     id: 8,
+//     icon: Logout,
+//     heading: "Logout",
+//     path: "/logout",
+    
+// }
+
 
 ]
 
