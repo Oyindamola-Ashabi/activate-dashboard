@@ -60,8 +60,10 @@ const CardOne = () => {
                         <Typography
                             sx={{
                                 marginTop: 1,
-                                fontWeight: 600,
-                                color: "#679FD2"
+                                fontWeight: 700,
+                                // fontSize: 20,
+                                color: "#679FD2",
+                                fontFamily: "Inter"
                             }}
                         >
                             {item.title}

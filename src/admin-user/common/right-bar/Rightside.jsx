@@ -7,6 +7,7 @@ import imgTwo from '../../../assets/cloth-two.png'
 import imgThree from '../../../assets/cloth-three.png'
 import imgFour from '../../../assets/cloth-four.png'
 import imgFive from '../../../assets/cloth-five.png'
+import numberLogo from '../../../assets/number-one.png'
 const Rightside = () => {
   const [qty, setQty] = useState(2);
 
@@ -21,6 +22,9 @@ const Rightside = () => {
         <div className='cart-logo'>
           <h3>Cart Items</h3>
           <img src={cartImg} alt="img" className='mainCart' />
+        </div>
+        <div className='num'>
+          <img src={numberLogo} alt="number"/>
         </div>
 
         <div className="cart-item">

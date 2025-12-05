@@ -26,7 +26,9 @@
 .inner-element .side-bar a {
     text-decoration: none;
     color: #838383;
-    font-family: inter;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .new {

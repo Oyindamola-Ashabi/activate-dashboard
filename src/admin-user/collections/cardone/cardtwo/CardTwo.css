@@ -32,7 +32,22 @@
   justify-content: space-between;
   align-self: center;
   margin-top: 5px;
-  font-size: 11px;
+  
+}
+
+.card-row h4{
+  color: #252f40;
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.card-row .price{
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 600;
+  /* font-style: Semi-Bold; */
+
 }
 
 .avatars {
@@ -40,8 +55,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  margin-top: 5px;
-  font-size: 11px;
+  padding-top: 20px;
+  font-size: 13px;
+  font-family: Inter;
+  font-weight: 500;
+  color: #838383;
 }
 
 .cart-btn {
@@ -54,7 +72,9 @@
   border: 1px solid #679FD2;;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
 }
 
 .cards-wrapper {
@@ -63,7 +83,21 @@
 
 .cards-title {
   font-size: 16px;
-  color: #679FD2;
+  font-family: Inter;
+  font-weight: 500;
+  /* color: #679FD2; */
   /* font-weight: 600; */
   /* margin-bottom: 15px; */
+}
+
+
+.card-img-wrapper {
+  position: relative;
+}
+
+.card-red {
+  position: absolute;
+  top: 8px;      /* adjust */
+  right:8px;     /* or right: 8px */
+  /* width: 25px;   optional */
 }
