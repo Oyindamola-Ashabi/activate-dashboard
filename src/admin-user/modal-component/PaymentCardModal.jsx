@@ -3,6 +3,7 @@ import closeImg from '../../assets/close.png'
 // import imgWallet from '../../assets/wallet.png'
 import imgBlur from '../../assets/blur.png'
 import imgSim from '../../assets/sim.png'
+// import imgCursor from '../../assets/cursor.png'
 
 function PaymentCardModal({ close, switchToDelivery, proceedToCheckout }) {
   return (
@@ -35,7 +36,7 @@ function PaymentCardModal({ close, switchToDelivery, proceedToCheckout }) {
             {/* <div className="card-user-name">Egbetayo Damiloa Ezekiel</div> */}
             <div className="card-number">N XXXX XXXX XXX</div>
             <div className='card-num'>
-              <div className="card-number">5329 **** **** 7890</div>
+              <div className="card-2-number">5329 **** **** 7890</div>
               <button className="fund-wallet-btn">fund wallet</button>
               {/* <button className="fund-wallet-btn"><img src={imgWallet} alt="wallet" /></button> */}
             </div>
@@ -60,7 +61,11 @@ function PaymentCardModal({ close, switchToDelivery, proceedToCheckout }) {
             {/* Row 2 */}
             <div className="input-group">
               <label>Expiry Date</label>
+              {/* <div className='cursor'> */}
               <input type="text" defaultValue="09 - September - 2023" />
+              {/* <img src={imgCursor} alt="cursor"  className='cursorr'/>
+              </div> */}
+              {/* <input type="text" defaultValue="09 - September - 2023" /> */}
             </div>
             <div className="input-group">
               <label>Amount</label>

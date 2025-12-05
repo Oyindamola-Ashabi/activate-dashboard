@@ -1,5 +1,6 @@
 import './Modals.css';
 import closeImg from '../../assets/close.png'
+import imgCursor from '../../assets/cursor.png'
 
 // This is the intermediate screen that shows price breakdown but keeps the 'Card' tab active
 function CardCheckoutModal({ close, switchToDelivery, confirmOrder }) {
@@ -43,7 +44,10 @@ function CardCheckoutModal({ close, switchToDelivery, confirmOrder }) {
           <div className="delivery-section">
             <div className="section-header">
               <label className="section-title">Delivery Address</label>
-              <span className="edit-btn">Edit 📝</span>
+              <div className='coxx'>
+                <button className="edit-btn">Edit</button>
+                <img src={imgCursor} alt="cursor" className='cox' />
+              </div>
             </div>
             <div className="delivery-box">
               24, Abasi Ojukwu Street, Alakuko, Lagos state

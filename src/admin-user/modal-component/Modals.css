@@ -1,4 +1,3 @@
-/* General Setup and Overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -10,14 +9,14 @@
   z-index: 999;
 }
 
-/* Modal container */
+
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 600px;
+  width: 620px;
   /* height: 700px; */
-  /* max-width: 100%; */
+  max-width: 100%;
   transform: translate(-50%, -50%);
   background: #fff;
   padding: 25px;
@@ -27,13 +26,17 @@
   z-index: 1000;
 }
 
+
+
 .modal.small {
-  width: 400px;
-  padding: 40px 25px;
-  /* Increased top/bottom padding for the final modal */
+  width: 510px;
+  height: auto;
+  padding: 40px 20px;
+  /* background-color: #4A80C5; */
+  
 }
 
-/* --- 1. Modal Header/Tabs Styling --- */
+
 .modal-tabs {
   margin-bottom: 10px;
   display: flex;
@@ -43,26 +46,28 @@
 }
 
 .tab-switch-group {
-  width: 350px;
-  height: 50px;
+  /* width: 350px;
+  height: 50px; */
   display: flex;
   justify-content: center;
   align-items: center;
   background: rgba(103, 159, 210, 0.14);
   border-radius: 20px;
-  padding: 10px;
+  padding: 8px 25px;
 
-  gap: 10px;
+  gap: 5px;
 
 }
 
 .tab {
-  padding: 10px 30px;
+  padding: 6px 30px;
   background: transparent;
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 19px;
   color: #333;
   transition: background-color 0.2s, color 0.2s;
 }
@@ -71,6 +76,9 @@
   background: #679FD2;
   color: white;
   /* padding: 12px 20px; */
+  /* font-family: Poppins;
+  font-size: 19px;
+  font-weight: 500; */
 }
 
 .close-btn {
@@ -78,14 +86,21 @@
   cursor: pointer;
   color: #666;
   padding: 5px;
-  /* Make it easier to click */
+
   position: absolute;
   left: 520px;
   top: 10px;
 
 }
 
-/* --- 2. Input Fields and Layout for Card Modal (Image 1) --- */
+.close-btn-second{
+  position: absolute;
+  right: -20px;
+  top: -20px;
+
+}
+
+
 
 .input-grid {
   display: grid;
@@ -97,25 +112,51 @@
 .input-group {
   display: flex;
   flex-direction: column;
+  /* font-family: Inter;
+  font-weight: 500;
+  font-family: 13px; */
 }
 
 .input-group label {
   font-size: 13px;
   font-weight: 500;
-  color: #555;
+  color: #28293D;
   margin-bottom: 5px;
+  font-family: Inter;
+
+}
+
+.input-group input {
+  font-family: Lato;
+  font-weight: 600;
+  font-size: 12px;
+  /* color: #4A80C5; */
 }
 
 .input-subtext {
-  font-size: 11px;
-  color: #888;
+  font-size: 12px;
+  color: #000;
   margin-top: 4px;
+  font-family: Lato;
+  font-weight: 600;
 }
 
+/* .cursor{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  
+} */
+
+/* .cursorr{
+  margin-left: 10px;
+} */
+
 .modal-body {
-  width: 80%;
+  width: 70%;
   position: relative;
-  left: 50px;
+  left: 80px;
 }
 
 .modal-body input,
@@ -124,24 +165,24 @@
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #ddd;
+  border: none;
   font-size: 14px;
+  background-color: #F1F1F1;
 }
 
-/* --- 3. Card Preview Styling --- */
+
 
 
 
 
 .card-preview {
-  /* Image 1 uses a distinct gradient and texture, this is a close approximation */
   background: linear-gradient(135deg, #1F3246 0%, #2B455E 35%, #4A80C5 65%, #679FD2 100%);
-  padding: 20px;
+  padding: 15px;
   color: #fff;
-  margin-bottom: 20px;
+  margin-top: 20px;
   position: relative;
   left: 60px;
-  /* overflow: hidden;  */
+
   width: 73%;
   height: 150px;
   border-radius: 7px;
@@ -186,32 +227,46 @@
 }
 
 .account-type {
-  font-weight: 600;
+  font-weight: 700;
+  font-family: Lato;
+  font-size: 10px;
+
 }
 
 .active-status {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 10px;
+  font-family: Lato;
   padding: 2px 8px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.2);
 }
 
 .card-user-name {
-  font-size: 14px;
+  font-size: 10px;
   margin-bottom: 2px;
+  font-weight: 700;
+  font-family: Lato;
+}
+
+.card-2-number {
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Lato;
 }
 
 .card-number {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: Lato;
+
 }
 
 .fund-wallet-btn {
   background: rgba(174, 217, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: white;
-  padding: 5px 12px;
+  padding: 10px 25px;
   /* border-radius: 10px; */
   font-size: 12px;
   /* margin-top: 15px; */
@@ -219,15 +274,18 @@
   cursor: pointer;
   align-self: flex-end;
   z-index: 1;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: Lato;
 }
 
 .blur {
   position: absolute;
-  bottom: 0px;
-  left: 240px;
+  bottom: -4px;
+  left: 220px;
 }
 
-/* Subtotal and Toggle */
+
 .checkout-footer {
   display: flex;
   justify-content: space-between;
@@ -236,22 +294,30 @@
 }
 
 .subtotal-text {
-  font-size: 15px;
-  color: #666;
+  font-weight: 500;
+  color: #28293D;
+  font-family: Inter;
+  font-size: 13px;
 }
 
-.subtotal-amount {
-  font-weight: 600;
-  color: #333;
-}
+
+/* .subtotal-amount {
+  font-weight: 500;
+  color: #28293D;
+  font-family: Inter;
+  font-size: 13px;
+} */
 
 /* Custom Toggle Switch to match the image */
 .toggle-switch {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 13px;
-  color: #555;
+  font-size: 11px;
+  font-weight: 500;
+  color: #28293D;
+  font-family: Inter;
+
 }
 
 .toggle-switch input[type="checkbox"] {
@@ -263,7 +329,7 @@
   display: inline-block;
   width: 38px;
   height: 20px;
-  background-color: #ccc;
+  background-color: #F1F1F1;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -276,40 +342,51 @@
   left: 2px;
   width: 16px;
   height: 16px;
-  background-color: white;
+  background-color: #679FD2;
   border-radius: 50%;
   transition: transform 0.2s;
 }
 
 .toggle-switch input[type="checkbox"]:checked+.switch-label {
-  background-color: #679FD2;
+  background-color: #2a2f33;
 }
 
 .toggle-switch input[type="checkbox"]:checked+.switch-label:after {
   transform: translateX(18px);
 }
 
-/* --- 4. Styling for Pay On Delivery Modal (Image 2 & 4) --- */
+
 
 .price-list {
   margin-bottom: 25px;
+  color: #28293D;
+  ;
 }
 
 .price-item {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
-  font-size: 14px;
-  color: #555;
+  font-size: 13px;
+  /* color: #555; */
+  font-family: Inter;
+  font-weight: 500;
 }
 
+/* .amount{
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 13px;
+} */
+
 .price-item.total-item {
-  font-weight: 600;
-  color: #333;
-  border-top: 1px solid #eee;
+  font-weight: 500;
+  /* color: #333; */
+  /* border-top: 1px solid #eee; */
   padding-top: 15px;
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 13px;
+  font-family: Inter;
 }
 
 .delivery-section {
@@ -324,28 +401,33 @@
 }
 
 .section-title {
-  font-weight: 500;
-  color: #333;
-  font-size: 14px;
+  font-weight: 700;
+  /* color: #333; */
+  font-size: 13px;
+  font-family: Inter;
 }
 
 .edit-btn {
   background: none;
   border: none;
-  color: #679FD2;
+  /* color: #28293D; */
   font-size: 13px;
   cursor: pointer;
   font-weight: 500;
+  font-family: Inter;
 }
 
 .delivery-box {
   padding: 15px;
-  background: #f8faff;
+  background: #ffffff;
   /* Light blue-ish background to match image */
   border-radius: 8px;
-  border: 1px solid #e4efff;
-  font-size: 14px;
-  color: #333;
+  box-shadow: 0px 4px 10px rgba(103, 159, 210, 0.24);
+  border-radius: 6px;
+  font-size: 13px;
+  color: #28293D;
+  font-family: Inter;
+  font-weight: 500;
 }
 
 .confirm-delivery-btn {
@@ -357,6 +439,10 @@
 
 .final-modal {
   text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600;
+  /* width: 100%; */
 }
 
 .modal-body h3 {
@@ -368,7 +454,10 @@
   font-size: 15px;
   color: #555;
   line-height: 1.5;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  padding-bottom: 5px;
+  letter-spacing: 0;
+  /* width: 100%; */
 }
 
 .success-icon-container {
@@ -393,55 +482,74 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
+  /* background-color: #4A80C5; */
 }
 
 .btn-width{
-  width: 50%;
-  position: relative;
-  left: 120px;
-  margin-top: 10px;
-  
+width: 50%;
+position: relative;
+left: 110px;
+margin-top: 10px;
 }
 
 .btn-primary,
 .btn-secondary {
   width: 50%;
-  
-  
+
+
   margin-top: 0;
 }
 
 .btn-primary.done-btn {
-  background: #FFDD48;
-  /* Yellow/Gold color from the image */
+  background: white;
+
   color: #333;
-  border: 1px solid #FFDD48;
+  border: 1px solid #FFD145;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 13px;
+  
+
 }
 
 .btn-secondary {
-  width: 50%;
+  width: 100%;
   border: 1px solid #679FD2;
   background: white;
-  color: #679FD2;
+  /* color: #679FD2; */
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
+  padding: 10px 20px;
+  font-family: Poppins;
+  font-weight: 600;
 }
 
 
-/* General Buttons */
+
 .btn-primary {
   width: 100%;
   padding: 12px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   border: none;
   background: #679FD2;
   color: white;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Lato;
   transition: background-color 0.2s;
 }
+
+.coxx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 @keyframes fadeIn {
   from {

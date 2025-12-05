@@ -3,3 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body.modal-open {
+    overflow: hidden; /* Stops background scrolling */
+    padding-right: 17px; /* Compensates for scrollbar width to prevent jump */
+}

@@ -1,5 +1,6 @@
 import './Modals.css';
 import closeImg from '../../assets/close.png'
+import imgCursor from '../../assets/cursor.png'
 
 function PayOnDeliveryModal({ close, switchToCard, confirmOrder }) {
   return (
@@ -7,7 +8,7 @@ function PayOnDeliveryModal({ close, switchToCard, confirmOrder }) {
       <div className="overlay" onClick={close}></div>
 
       <div className="modal">
-        {/* Modal Header for Tabs and Close Button */}
+        
         <div className="modal-tabs">
           <div className="tab-switch-group">
             <button className="tab" onClick={switchToCard}>Card</button>
@@ -41,7 +42,12 @@ function PayOnDeliveryModal({ close, switchToCard, confirmOrder }) {
           <div className="delivery-section">
             <div className="section-header">
               <label className="section-title">Delivery Address</label>
-              <button className="edit-btn">Edit</button>
+              <div className='coxx'>
+                <button className="edit-btn">Edit</button>
+              <img src={imgCursor} alt="cursor" className='cox'/>
+              </div>
+              {/* <button className="edit-btn">Edit</button>
+              <span><img src={imgCursor} alt="cursor" className='cox'/></span> */}
             </div>
             <div className="delivery-box">
               24, Abasi Ojukwu Street, Alakuko, Lagos state
