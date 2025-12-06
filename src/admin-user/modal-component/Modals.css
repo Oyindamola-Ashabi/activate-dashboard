@@ -562,3 +562,98 @@ margin-top: 10px;
     transform: translate(-50%, -50%);
   }
 }
+
+
+/* --- 📱 Modals.css: MOBILE RESPONSIVENESS (MAX-WIDTH 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Base Modal Container Fix (Applies to all modals) */
+    .modal {
+        /* CRITICAL: Set width to almost full screen, but keep centering */
+        width: 95% !important; 
+        max-width: 95% !important;
+        /* Allow content to scroll if it exceeds screen height */
+        max-height: 95vh;
+        overflow-y: auto;
+        padding: 15px; /* Reduce overall padding */
+    }
+
+    /* 2. Fix for the smaller Final Modal */
+    .modal.small {
+        width: 90% !important; 
+        max-width: 90% !important;
+        padding: 30px 15px; /* Adjust padding for small modals */
+    }
+
+    /* 3. Modal Layout Shifts & Centering Fixes */
+    
+    /* CRITICAL FIX: Center the modal body content */
+    .modal-body {
+        width: 100% !important; /* Full width */
+        position: relative !important; /* Reset position */
+        left: auto !important; /* Remove fixed left shift (80px) */
+    }
+    
+    /* CRITICAL FIX: Reposition Close Button */
+    .close-btn {
+        position: absolute !important;
+        right: 15px !important; /* Anchor to the top right */
+        left: auto !important; /* Remove fixed left shift (520px) */
+        top: 15px !important;
+        z-index: 10;
+        padding: 0;
+    }
+    
+    /* Adjustments for the smaller close button */
+    .close-btn-second {
+        right: 15px !important;
+        top: 15px !important;
+    }
+
+    /* 4. Tab Group Fix (Reduce size/padding) */
+    .tab-switch-group {
+        padding: 5px 15px; /* Reduce padding */
+    }
+    
+    .tab {
+        padding: 6px 15px; /* Reduce padding on tabs */
+        font-size: 16px; /* Slightly smaller font for tabs */
+    }
+
+    /* 5. Card Preview Fix (PaymentCardModal) */
+    .card-preview {
+        width: 95% !important; /* Full width */
+        left: 0px !important; /* Remove fixed left shift (60px) */
+        margin: 20px auto 0 auto; /* Center with auto margins */
+    }
+    
+    /* Reposition blur to stay on the right side of the card */
+    .blur {
+        right: 10px;
+        left: auto;
+    }
+
+    /* 6. Input Grid Fix (PaymentCardModal) */
+    .input-grid {
+        grid-template-columns: 1fr !important; /* CRITICAL: Switch from 2 columns to 1 column */
+        gap: 15px; /* Adjust gap */
+    }
+
+    /* 7. Button Width Fix (For Proceed/Confirm buttons) */
+    .btn-width {
+        width: 100% !important; /* Full width */
+        left: auto !important; /* Remove fixed left shift (110px) */
+        margin: 10px 0; /* Add margin */
+    }
+
+    /* 8. Final Modal Action Buttons (Success Modal) */
+    .final-modal-actions {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px;
+    }
+    
+    .final-modal-actions .btn-primary,
+    .final-modal-actions .btn-secondary {
+        width: 100%; /* Make stacked buttons full width */
+    }
+}
