@@ -1,14 +1,15 @@
+/* --- Desktop Styles (Preserved) --- */
+
 .container {
     width: 16%;
     min-height: 100vh;
-    /* background-color: rgb(241, 143, 143); */
     box-shadow: 1px 1px 1px rgba(136, 136, 136, 0.3);
     margin-right: 2px;
-
-
-
 }
 
+.bar {
+    display: none; 
+}
 
 .logo {
     padding-left: 40px;
@@ -38,7 +39,6 @@
 
 .active-link {
     color: #679FD2 !important;
-    /* ACTIVE COLOR */
     font-weight: 500;
 }
 
@@ -49,44 +49,12 @@
 .iconn-img {
     width: 24px;
     height: 24px;
-
 }
 
 .text {
     font-size: 14px;
     font-weight: 400;
 }
-
-
-
-
-/* option one button 1 */
-/* .logout-btn {
-    margin-top: auto;
-    width: 100%;
-    background: none;
-    border: none;
-    padding: 40px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    color: #838383;
-    font-family: inter;
-    font-size: 15px;
-}
-
-.logout-btn:hover {
-    background-color: #f5f5f5;
-}
-
-.logout-btn img {
-    width: 20px;
-    height: 20px;
-} */
-
-/* logout option 2 */
 
 .container .logout{
     display: flex;
@@ -95,4 +63,75 @@
     text-decoration: none;
     color: #838383;
     font-family: inter;
+}
+
+/* --- 📱 SideBar.css: MOBILE RESPONSIVENESS (MAX-WIDTH 768px) --- */
+@media (max-width: 768px) {
+    /* 1. Sliding Sidebar Container */
+    .container {
+        width: 70%; 
+        position: fixed; 
+        left: -70%; 
+        top: 0;
+        min-height: 100vh;
+        z-index: 1000; 
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: left 0.3s ease-in-out; 
+        background-color: white; 
+    }
+
+    .container.open {
+        left: 0; 
+    }
+    
+    /* CRITICAL FIX: The desktop logo must be visible on mobile, but NOT fixed. */
+    /* If the desktop logo is outside the .container, you may need an extra class here. */
+    /* Assuming the .logo class is used ONLY for the logo image element itself: */
+    
+    /* 2. Logo inside the sidebar: Make it visible when the menu is open */
+    .logo {
+        position: relative !important; /* Forces logo to flow normally inside the sliding menu */
+        display: block !important;
+        padding-left: 20px !important;
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+        z-index: auto !important;
+        width: auto !important;
+        left: auto !important;
+    }
+    
+    /* 3. Menu Icon (`.bar`): Remains fixed on the right */
+    .bar {
+        display: block; 
+        position: fixed;
+        top: 15px;
+        right: 15px; 
+        left: auto;
+        z-index: 9999; 
+        cursor: pointer;
+        color: #333;
+        background-color: white; 
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    
+    /* 4. Layout Adjustments inside the sliding panel (No logo shift needed now) */
+    .side-bar {
+        padding: 10px 15px 10px 20px;
+    }
+
+    .inner-element {
+        margin-top: 5px; 
+    }
+
+    .container .logout {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    /* Remove the shift on the first item since the logo is now visible inside the slider: */
+    .inner-element:first-child {
+        margin-top: 0; 
+    }
 }

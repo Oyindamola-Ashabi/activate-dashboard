@@ -1,3 +1,5 @@
+/* --- Desktop Styles (Preserved - DO NOT CHANGE THESE) --- */
+
 .right-side-container{
     width: 28%;
     min-height: 100vh;
@@ -5,18 +7,14 @@
     color: black;
     box-shadow: 1px 1px 1px 1px rgba(66, 64, 64, 0.6);
     margin-top: 20px;
-    
-
 }
-
 
 .cart-container {
-  width: 90%;
-  max-width: 420px;
-  margin: 0 auto;
-  padding: 13px;
+    width: 90%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 13px;
 }
-
 
 .cart-logo{
     width: 100%;
@@ -31,96 +29,94 @@
 }
 
 .cart-container h3 {
-  margin-bottom: 15px;
-  color: #222;
-  font-size: 14px;
-  font-family: Lato;
-  font-weight: 500;
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 500;
 }
 
 .cart-item {
-  display: flex;
-  gap: 15px;
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
 .cart-img {
-  width: 90px;
-  height: 90px;
-  border-radius: 10px;
-  object-fit: cover;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .cart-details {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .item-title {
-  font-family: 500;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 8px;
-  color: #000;
+    font-family: 500;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #000;
 }
 
 .qty-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .qty-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  border: 1px solid #bcd6ff;
-  background: #e8f1ff;
-  font-size: 18px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #1d74f5;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid #bcd6ff;
+    background: #e8f1ff;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #1d74f5;
 }
 
 .qty-number {
-  font-size: 16px;
-  font-weight: bold;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .remove-btn {
-  color: white;
-  padding: 6px 12px;
-  border: none;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 700;
-  font-family: Lato;
-  background: #FF8E8E;
-border-radius: 4px;
-margin-top: 4px;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Lato;
+    background: #FF8E8E;
+    border-radius: 4px;
+    margin-top: 4px;
 }
 
 .checkout-btn {
-  width: 100%;
-  background: #679FD2;
-border-radius: 4px;
-  color: white;
-  padding: 12px;
-
-  border: none;
-  cursor: pointer;
-  font-weight: 500px;
-  margin-top: 10px;
-  font-size: 12px;
-  font-family: Lato;
+    width: 100%;
+    background: #679FD2;
+    border-radius: 4px;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: Lato;
 }
 
 .below-cloth{
@@ -130,7 +126,6 @@ border-radius: 4px;
 
 .advert-text{
     width: 100%;
-    /* background-color: blue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -140,13 +135,14 @@ border-radius: 4px;
 
 .advert-text .advert{
     font-size: 12px;
-   
 }
 
 .grouped-images{
+    /* Keep width: 60%; here for desktop context */
     width: 60%;
 }
 
+/* --- Preserve Original Absolute Positioning for Desktop --- */
 .grouped-images .img-one{
     width: 252px;
     height: 80px;
@@ -154,77 +150,157 @@ border-radius: 4px;
     position: absolute;
     top: 335px;
     right: 65px;
-    /* background-color: #1d74f5; */
-    /* padding-bottom: 10px;
-    padding-left: 30px; */
 }
 
 .grouped-images .img-two{
     width: 260px;
     height: 80px;
     border-radius: 4px;
-    
-    /* background-color: #1d74f5; */
-    /* margin-bottom: 5px; */
-    /* padding-left: 30px; */
-    /* background-color: #1d74f5; */
     position: absolute;
     top: 369px;
     right: 60px;
-    
 }
 
 .grouped-images .img-three{
     width: 280px;
     height: 80px;
     border-radius: 4px;
-    /* background-color: #1d74f5; */
     position: absolute;
     top: 442px;
     right: 50px;
     z-index: 1;
-    
 } 
-
 
 .grouped-images .img-four{
     width: 260px;
     height: 80px;
     border-radius: 4px;
-    /* background-color: #1d74f5; */
     position: absolute;
     top: 475px;
     right: 60px;
-    
 } 
-
 
 .grouped-images .img-five{
     width: 252px;
     height: 80px;
     border-radius: 4px;
-    /* background-color: #968a8d; */
     position: absolute;
     top: 540px;
     right: 65px;
-    
 } 
 
 .num{
-  position: absolute;
-width: 9px;
-height: 22px;
-left: 1308px;
-top: 22px;
+    position: absolute;
+    width: 9px;
+    height: 22px;
+    left: 1308px;
+    top: 22px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 146.69%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
 
-font-family: 'Lato';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 146.69%;
-/* identical to box height, or 22px */
-display: flex;
-align-items: center;
 
-color: #FFFFFF;
+/* --- 📱 Rightside.css: MOBILE RESPONSIVENESS (MAX-WIDTH 768px) --- */
+@media (max-width: 768px) {
+    
+    .right-side-container {
+        position: relative; 
+        width: 100%; 
+        min-height: auto; 
+        box-shadow: none; 
+        margin-top: 20px;
+        padding-bottom: 40px; 
+    }
+
+    .cart-container {
+        width: 95%; 
+        max-width: 100%; 
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .grouped-images {
+        width: 100% !important; 
+        height: 200px; /* Increased height to accommodate bigger images */
+        position: relative; 
+    }
+
+    /* CRITICAL FIX: Make the .num element visible and position it correctly */
+    .num {
+        display: block !important; /* Force visibility */
+        position: absolute !important;
+        
+        /* Anchor to the top-right corner of the cart container */
+        right: 15px !important; 
+        top: 15px !important;  
+        
+        z-index: 1000 !important; /* Extremely high Z-index to guarantee it's on top */
+        width: auto !important; 
+        height: auto !important;
+    }
+    
+    /* NEW FIX: Ensure the image inside .num is also visible and sized */
+    .num img {
+        display: block !important;
+        width: 25px !important; /* Set a specific size for visibility */
+        height: 25px !important;
+    }
+
+
+    /* FIX: Increased Image Size (50vw) and Centering */
+    .grouped-images .img-one,
+    .grouped-images .img-two,
+    .grouped-images .img-three,
+    .grouped-images .img-four,
+    .grouped-images .img-five {
+        position: absolute !important;
+        
+        /* Increased Size: 50% of viewport width */
+        width: 50vw !important; 
+        height: 12vh !important; /* Slightly increased height */
+        border-radius: 4px;
+        
+        /* CENTERING ALGORITHM: left: 50% minus half the width (50vw / 2 = 25vw) */
+        left: 50% !important; 
+        margin-left: -25vw !important; 
+    }
+    
+    /* Final Vertical Stacking Offsets */
+    .grouped-images .img-one{
+        top: 0;
+        z-index: 5;
+    }
+    
+    .grouped-images .img-two{
+        top: 2vh; 
+        z-index: 4;
+    }
+
+    .grouped-images .img-three{
+        top: 4vh;
+        z-index: 3;
+    } 
+
+    .grouped-images .img-four{
+        top: 6vh;
+        z-index: 2;
+    } 
+
+    .grouped-images .img-five{
+        top: 8vh;
+        z-index: 1;
+    } 
+    
+    /* Ensure cart items stack nicely */
+    .cart-item {
+        flex-wrap: wrap; 
+        margin-bottom: 10px;
+    }
+
 }

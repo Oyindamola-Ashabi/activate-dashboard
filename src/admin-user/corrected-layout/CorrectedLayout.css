@@ -1,17 +1,53 @@
-.correct-layout-container{
-    
-   width: 100%;
+/* CORRECTEDLAYOUT.CSS */
+
+.correct-layout-container {
+    width: 100%;
     background-color: white;
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .middle-content {
-  flex: 1;
-  padding: 20px;
-  background-color: white;
-  width: 57%;
-  /* background-color: brown; */
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    width: 57%;
+}
+
+/* Mobile Responsiveness (MAX-WIDTH 768px) */
+@media (max-width: 768px) {
+    
+    .correct-layout-container {
+        /* Changes desktop flex row to mobile column flow */
+        flex-direction: column;
+    }
+
+    .middle-content {
+        width: 100%;
+        padding: 10px;
+        /* CRITICAL: Creates space for fixed Logo/Menu Icon */
+        padding-top: 60px;
+        order: 1;
+    }
+
+    .right-side-container {
+        /* CRITICAL FIX: Make the right bar visible and full width */
+        display: block;
+        width: 100%;
+        order: 2; /* Stacks it below middle-content */
+    }
+    
+    /* Mobile Overlay Style */
+    .overlay-mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 999; /* Below the sidebar (1000) */
+        cursor: pointer;
+    }
 }
