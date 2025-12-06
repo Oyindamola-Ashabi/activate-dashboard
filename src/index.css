@@ -8,3 +8,9 @@ body.modal-open {
     overflow: hidden; /* Stops background scrolling */
     padding-right: 17px; /* Compensates for scrollbar width to prevent jump */
 }
+
+/* Ensure the HTML/Body element doesn't allow scrolling beyond 100% */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}

@@ -246,11 +246,11 @@
     }
     
     /* NEW FIX: Ensure the image inside .num is also visible and sized */
-    .num img {
+    /* .num img {
         display: block !important;
-        width: 25px !important; /* Set a specific size for visibility */
+        width: 25px !important; 
         height: 25px !important;
-    }
+    } */
 
 
     /* i fixed the Image Size (50vw) and Centering */
