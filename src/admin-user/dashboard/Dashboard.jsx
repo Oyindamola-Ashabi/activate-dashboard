@@ -1,5 +1,6 @@
 import CardOne from '../collections/cardone/cardOne'
-import CardTwo from '../collections/cardone/cardtwo/CardTwo'
+import CardTwo from '../collections/cardtwo/CardTwo'
+
 
 import NavTop from '../common/nav-top/NavTop'
 import './Dashboard.css'
@@ -10,6 +11,7 @@ const Dashboard = () => {
       <NavTop />
       <CardOne />
       <CardTwo/>
+      
 
     </div>
   )

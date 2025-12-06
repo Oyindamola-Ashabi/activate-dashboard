@@ -1,13 +1,13 @@
 import './CardTwo.css'
-import bigClothOne from '../../../../assets/top-cloth-one.png'
-import bigClothTwo from '../../../../assets/clothhhhh.png'
-import bigClothThree from '../../../../assets/clothhh.png'
-import bigClothFour from '../../../../assets/clothhh.png'
-import bigClothFive from '../../../../assets/clothhhh.png'
-import bigClothSix from '../../../../assets/cloth.png'
-import smallImgage from '../../../../assets/group-pics.png'
-import redImage from '../../../../assets/red-love.png'
-import myLove from '../../../../assets/white-love.png'
+import bigClothOne from '../../../assets/top-cloth-one.png'
+import bigClothTwo from '../../../assets/clothhhhh.png'
+import bigClothThree from '../../../assets/clothhh.png'
+import bigClothFour from '../../../assets/clothhh.png'
+import bigClothFive from '../../../assets/clothhhh.png'
+import bigClothSix from '../../../assets/cloth.png'
+import smallImgage from '../../../assets/group-pics.png'
+import redImage from '../../../assets/red-love.png'
+import myLove from '../../../assets/white-love.png'
 import { useNavigate } from "react-router-dom";
 
 

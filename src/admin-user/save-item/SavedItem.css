@@ -1,0 +1,91 @@
+/* SavedItem.css */
+
+.saved-item-page-container {
+    width: 100%;
+    background-color: white;
+}
+
+/* Container to handle padding and general layout */
+.saved-content-wrapper {
+    padding: 20px;
+}
+
+/* Collections Title Style */
+.saved-collections-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Wrapper for horizontal scroll (important for mobile responsiveness) */
+.categories-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+}
+
+/* The row of buttons */
+.categories-list {
+    display: flex;
+    gap: 20px;
+    width: max-content; 
+    align-items: center;
+    margin-left: 50px;
+    /* background-color: #c54a54; */
+}
+
+.category-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    position: relative;
+    transition: color 0.2s;
+    white-space: nowrap; 
+}
+
+/* Active Category Styling (Ankara) */
+.category-button.active {
+    color: #4A80C5; 
+    font-weight: 600;
+}
+
+/* Underline for Active Category */
+.category-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #4A80C5; 
+    border-radius: 2px;
+}
+
+.view-others-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #4A80C5;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.arrow {
+    margin-left: 5px;
+}
+
+/* Optional: Adjust padding on the CardTwo wrapper for the saved page */
+.saved-content-wrapper .cards-wrapper {
+    padding: 0; /* Remove the extra 20px padding if you added it to saved-content-wrapper */
+}
