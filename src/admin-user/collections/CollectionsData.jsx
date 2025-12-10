@@ -42,7 +42,7 @@ import other8 from '../../assets/asooke-one.jpg';
 import other9 from '../../assets/jeans-two.jpg';
 
 
-export const savedItemData = [
+export const CollectionsData = [
     // 1. ANKARA ITEMS (6 products: 3 up, 3 down)
     { id: 101, category: 'Ankara', title: 'Ankara Set 1', price: '₦5500', stock: 25, img: ankara1, img2: smallImgage, img3: redImage },
     { id: 102, category: 'Ankara', title: 'Ankara Set 2', price: '₦4800', stock: 18, img: ankara2, img2: smallImgage, img3: myLove },

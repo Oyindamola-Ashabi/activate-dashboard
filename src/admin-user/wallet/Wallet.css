@@ -1,0 +1,169 @@
+
+
+.wallet-page-container {
+    padding: 20px;
+    background-color: #f7f7f7; 
+    min-height: 100vh;
+}
+
+.wallet-title {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* sir these are the Containers for the two cards */
+.wallet-cards-grid {
+    display: flex;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+
+
+.wallet-card-preview {
+    /* sir this help me adjust width based on my viewport. This is for a standard side-by-side view. */
+    width: 350px; 
+    padding: 13px;
+    color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+}
+
+/* My Active Card Gradient */
+.active-card {
+     background: linear-gradient(135deg, #1F3246 0%, #2B455E 35%, #4A80C5 65%, #679FD2 100%);
+}
+
+/* My Inactive Card Gradient */
+.inactive-card {
+    /* sir i adjusted gradient to look slightly muted/lighter, as seen in the image */
+    background: linear-gradient(135deg, #334d67 0%, #476a8f 40%, #9c657a 100%);
+    opacity: 0.9;
+}
+
+
+
+.card-header-row {
+    margin-bottom: 20px;
+}
+
+.account-type {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Lato;
+    color: #fff;
+    opacity: 0.8;
+    z-index: 5;
+}
+
+
+
+.card-use-sim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+   
+}
+
+.card-user-name {
+    font-size: 14px;
+    font-family: Lato;
+    /* margin-bottom: 2px; */
+    font-weight: 700;
+    z-index: 5;
+}
+
+.card-user-info {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.card-balance {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Lato;
+    letter-spacing: 0.5px;
+    
+}
+
+.fund-wallet-btn {
+  background: rgba(174, 217, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 25px; 
+  font-size: 12px;
+  width: fit-content;
+  cursor: pointer;
+  /* align-self: flex-end; */
+  z-index: 10;
+  font-size: 10px;
+  font-weight: 600;
+  font-family: Lato;
+}
+
+
+/* .card-footer-row {
+    padding-top: 10px;
+} */
+
+.card-2-number {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Lato;
+    /* opacity: 0.8; */
+}
+
+.active-status {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Lato;
+    border-radius: none;
+    padding: none;
+    margin-top: 10px;
+}
+
+.blur-design{
+   
+  position: absolute;
+  bottom: -4px;
+  left: 280px;
+
+}
+.blur-second-design{
+   
+  position: absolute;
+  top: -3px;
+  right: 270px;
+  
+
+}
+
+
+
+
+
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+    .wallet-cards-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .wallet-card-preview {
+        width: 90%; /* Take up most of the screen width */
+        max-width: 350px;
+    }
+}

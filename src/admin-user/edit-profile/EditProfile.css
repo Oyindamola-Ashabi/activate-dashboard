@@ -1,0 +1,182 @@
+
+
+.edit-profile-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.edit-profile-title {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Inter;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- =my-pics section --- */
+
+.my-pics-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.my-pics-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.profile-my-pics {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #679FD2;
+}
+
+.my-pics-edit-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #679FD2;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
+}
+
+.my-pics-edit-button:hover {
+    background-color: #679FD2;
+}
+
+.profile-name-display {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Inter;
+    color: #000;
+}
+
+/* --- Form Details Grid --- */
+
+.form-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for desktop */
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #679FD2;
+    box-shadow: 0 0 0 2px rgba(74, 128, 197, 0.2);
+    outline: none;
+    background-color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* --- Full-Width Fields --- */
+
+.full-width {
+    grid-column: 1 / -1; /* Makes the element span both columns */
+}
+
+/* --- Action Buttons --- */
+
+.form-actions-row {
+    display: flex;
+    justify-content: flex-end; /* Pushes buttons to the right */
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-cancel {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-save {
+    background-color: #679FD2;
+    color: white;
+}
+
+/* --- Mobile Responsiveness --- */
+
+@media (max-width: 600px) {
+    .form-details-grid {
+        /* Stack fields in a single column on small screens */
+        grid-template-columns: 1fr;
+    }
+
+    .form-actions-row {
+        /* Stack buttons vertically on small screens */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%; /* Make buttons full width */
+    }
+}

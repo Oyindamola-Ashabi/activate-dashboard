@@ -3,12 +3,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 // 🛑 Import CardTwo's CSS to apply the grid styles
-import '../collections/cardtwo/CardTwo.css'; 
+import '../some-collections/cardtwo/CardTwo.css'; 
 
 import NavTop from '../common/nav-top/NavTop'; 
 // 🛑 Import both data arrays
-import { savedItemData, otherCollectionData } from './SavedItemData'; 
-import './SavedItem.css';
+import { CollectionsData, otherCollectionData } from './CollectionsData'; 
+import './Collections.css';
+
 
 
 const categories = [
@@ -20,7 +21,7 @@ const categories = [
 ];
 
 
-const SavedItem = () => {
+const Collections = () => {
     // State for which category tab is active
     const [activeCategory, setActiveCategory] = useState('Ankara');
     // State to track if the user is viewing the "others" collection
@@ -37,7 +38,7 @@ const SavedItem = () => {
     // Determine which products to display based on the state
     const productsToDisplay = isViewingOthers 
         ? otherCollectionData // Display the 9 "other" items
-        : savedItemData.filter( // Otherwise, filter savedItemData by the active category
+        : CollectionsData.filter( // Otherwise, filter savedItemData by the active category
             item => item.category === activeCategory
           );
 
@@ -114,4 +115,4 @@ const SavedItem = () => {
     );
 }
 
-export default SavedItem;
+export default Collections;

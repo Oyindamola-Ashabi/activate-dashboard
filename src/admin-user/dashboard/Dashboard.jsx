@@ -1,5 +1,5 @@
-import CardOne from '../collections/cardone/cardOne'
-import CardTwo from '../collections/cardtwo/CardTwo'
+import CardOne from '../some-collections/cardone/cardOne'
+import CardTwo from '../some-collections/cardtwo/CardTwo'
 
 
 import NavTop from '../common/nav-top/NavTop'
